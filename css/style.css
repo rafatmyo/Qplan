@@ -1,0 +1,213 @@
+/* CSS Document */
+
+/* ---- button ---- */
+body{
+	    overflow-x: hidden;
+}
+#ciudades_chosen{
+	width:100%;
+}
+.none{
+	display:none;
+}
+#logimg{
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;	
+	opacity:1;
+}
+#logimg:hover{
+	-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+	opacity:.7;
+}
+.button {
+    display: inline-block;
+    padding: 0.5em 1.0em;
+    background: #EEE;
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+    color: #222;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 0 1px white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #8CF;
+    text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+    color: #222;
+}
+
+.button:active,
+.button.is-checked {
+    background-color: #28F;
+}
+
+.button.is-checked {
+    color: white;
+    text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+    box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+.button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button-group .button {
+    float: left;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+.resultado-listado .resultado-listado__propuesta {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+    border-radius: 2px;
+}
+
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____imagen {
+    overflow: hidden;
+    border-radius: 2px 2px 0 0;	
+}
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____imagen a {
+    display: block;
+}
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____imagen img {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+	width:100%;
+}
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____imagen img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.favorite-item {
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    padding: 6px 6px 6px 7px;
+    background-color: rgba(0,0,0,.75);
+    margin: 6px;
+    border-radius: 2px;
+}
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____texto {
+    text-align: left;
+    background: #fff;
+    padding: 7px 10px 10px;
+    border-radius: 0 0 2px 2px;
+}
+.favorite-item I {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: transparent url(../assets/img/time.png) 0 0 no-repeat;
+    background-size: cover;
+    margin: 0;
+    float: right;
+}
+.favorite-item SPAN {
+    display: block;
+    font-size: 20px;
+    float: left;
+    margin-right: 5px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____texto .principal {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____texto .principal SPAN {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 34px;
+    display: block;
+    background: url(../assets/img/grandiente-titulo-listado-propuesta.png) no-repeat 0 0;
+}
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____texto .secundario {
+    overflow: hidden;
+    color: rgba(0,0,0,.75);
+}
+H4 {
+    overflow: hidden;
+}
+H1, H2, H3, H4, H5 {
+    margin: 0;
+    padding: 0;
+}
+H3 {
+    overflow: hidden;
+    font-size: 21px;
+    color: #92897c;
+    padding: 2px 0;
+}
+
+.resultado-listado .resultado-listado__propuesta .resultado-listado__propuesta____texto .principal H3 {
+    font-weight: 400;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    color: #607d8b;
+    line-height: 22px;
+    white-space: nowrap;
+    padding: 0;
+}
+.resultado-listado .resultado-listado__propuesta.itemtype-event .resultado-listado__propuesta____texto .principal h3 a {
+    color: #2E60AC;
+}
+.lemobile{
+	display:block;
+}
+
+.icono{
+  background-image: url(../images/iconqplan.png);
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .lemobile {
+    display: none;
+  }
+}
